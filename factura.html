@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Pedido</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Formulario de Pedido</h1>
+
+  <label for="cliente" class="campo">Cliente:</label>
+  <input type="text" id="cliente" class="campo"><br><br>
+
+  <label for="direccion" class="campo">Dirección:</label>
+  <input type="text" id="direccion" class="campo"><br><br>
+
+  <label for="telefono" class="campo">Teléfono:</label>
+  <input type="tel" id="telefono" class="campo"><br><br>
+
+  <label for="fecha" class="campo">Fecha:</label>
+  <input type="text" id="fecha" class="campo" readonly><br><br>
+
+  <div id="lineas-productos">
+    <!-- Aquí se agregarán las líneas de productos dinámicamente -->
+  </div>
+
+  <button id="agregar-linea">Agregar Nueva Línea</button>
+  
+  <br><br>
+  
+  <button id="imprimir-factura">Imprimir Factura</button>
+  
+  <script src="obtener-fecha.js"></script>
+  <script src="imprimir-tabla.js"></script>
+  <script src="agregar-linea.js"></script>
+  
+</body>
+</html>
